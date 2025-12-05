@@ -161,51 +161,53 @@ export default function ProductsPage() {
           </div>
 
           {/* Products Grid */}
-          <div className="lg:col-span-3">
-            {sortedProducts.length === 0 ? (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground text-lg">No products found</p>
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {sortedProducts.map(product => (
-                  <div
-                    key={product.id}
-                    className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
-                  >
-                    <div className="aspect-square bg-gradient-to-br from-accent/30 to-secondary/20 flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300">
-                      {product.image}
-                    </div>
-                    <div className="p-6 space-y-3">
-                      <div>
-                        <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">
-                          {product.category}
-                        </p>
-                        <h3 className="text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
-                          {product.name}
-                        </h3>
-                      </div>
-                      <p className="text-sm text-muted-foreground">
-                        {product.description}
-                      </p>
-                      <div className="flex items-center justify-between pt-4">
-                        <span className="text-2xl font-bold text-primary">
-                          ${product.price.toFixed(2)}
-                        </span>
-                        <Link
-                          href={`/products/${product.id}`}
-                          className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-secondary transition-colors text-sm font-semibold flex items-center gap-2"
-                        >
-                          <ShoppingCart className="w-4 h-4" />
-                          View
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
+<div className="lg:col-span-3">
+  {sortedProducts.length === 0 ? (
+    <div className="text-center py-12">
+      <p className="text-muted-foreground text-lg">No products found</p>
+    </div>
+  ) : (
+    // CHANGE IS HERE: Use .slice(0, 2) to limit the array to the first two products
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {sortedProducts.slice(0, 2).map(product => ( 
+        <div
+          key={product.id}
+          className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
+        >
+          <div className="aspect-square bg-gradient-to-br from-accent/30 to-secondary/20 flex items-center justify-center text-6xl group-hover:scale-105 transition-transform duration-300">
+            {product.image}
           </div>
+          <div className="p-6 space-y-3">
+            <div>
+              <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-1">
+                {product.category}
+              </p>
+              <h3 className="text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+                {product.name}
+              </h3>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              {product.description}
+            </p>
+            <div className="flex items-center justify-between pt-4">
+              <span className="text-2xl font-bold text-primary">
+                ${product.price.toFixed(2)}
+              </span>
+              <Link
+                href={`/products/${product.id}`}
+                className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-secondary transition-colors text-sm font-semibold flex items-center gap-2"
+              >
+                {/* Ensure ShoppingCart is imported if you're using an icon library */}
+                {/* <ShoppingCart className="w-4 h-4" /> */}
+                View
+              </Link>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+</div>
         </div>
       </div>
     </div>

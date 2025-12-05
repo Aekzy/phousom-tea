@@ -19,16 +19,14 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         {/* Story Section */}
         <section className="space-y-6">
-          <h2 className="text-3xl font-bold text-foreground">About Our Lao Tea</h2>
+          <h2 className="text-3xl font-bold text-foreground">About Phou Sam</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            We are passionate about bringing the authentic taste of Laos to tea lovers around the world. 
-            Our teas are carefully sourced from the misty mountains of northern Laos, where generations 
-            of local families have perfected the art of tea cultivation and processing.
-          </p>
+            Welcome to Phou Sam Smart Food
+            Rooted in the mountains of Houaphanh, Laos, Phou Sam Smart Food Sole., Ltd is dedicated to bringing the purest flavors of nature to your table.
+                      </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Each blend is crafted with respect for traditional methods, preserving the natural flavors 
-            and health benefits that make Lao tea truly special. We work directly with local farmers 
-            to ensure fair practices and the highest quality tea leaves.
+            We specialize in producing and promoting local, high-quality food products 
+            from Phou Sam Tea to bamboo shoots, peppers, and spices and drinks etc… crafted with care, tradition, culture and sustainability.
           </p>
         </section>
 
@@ -36,9 +34,8 @@ export default function AboutPage() {
         <section className="bg-card border border-border rounded-lg p-8 space-y-4">
           <h3 className="text-2xl font-bold text-card-foreground">Our Mission</h3>
           <p className="text-muted-foreground leading-relaxed">
-            To celebrate and share the rich tea heritage of Laos while supporting local communities 
-            and promoting sustainable farming practices. We believe that every cup of tea tells a story 
-            of tradition, culture, and human connection.
+            To connect people with the natural richness of Laos by developing local value chains, 
+            empowering farmers, and ensuring that every product reflects quality, authenticity, careers and respect for nature
           </p>
         </section>
 
@@ -47,19 +44,19 @@ export default function AboutPage() {
           <div className="bg-card border border-border rounded-lg p-6 space-y-3">
             <h4 className="text-xl font-bold text-card-foreground">Quality</h4>
             <p className="text-muted-foreground text-sm">
-              Premium teas selected for their purity, flavor, and health benefits
+              Every product undergoes rigorous quality control to ensure it meets international standards while maintaining its authentic character.
             </p>
           </div>
           <div className="bg-card border border-border rounded-lg p-6 space-y-3">
-            <h4 className="text-xl font-bold text-card-foreground">Authenticity</h4>
+            <h4 className="text-xl font-bold text-card-foreground">Authentic Lao Products</h4>
             <p className="text-muted-foreground text-sm">
-              Genuine Lao tea using traditional cultivation and processing methods
+              We source genuine products from Houaphanh Province, preserving their cultural significance while preparing them for international markets.
             </p>
           </div>
           <div className="bg-card border border-border rounded-lg p-6 space-y-3">
-            <h4 className="text-xl font-bold text-card-foreground">Sustainability</h4>
+            <h4 className="text-xl font-bold text-card-foreground">Cultural Authenticity</h4>
             <p className="text-muted-foreground text-sm">
-              Fair trade practices and environmentally responsible sourcing
+              We maintain the integrity of traditional production methods while adapting products to meet global market demands.
             </p>
           </div>
         </section>
@@ -73,8 +70,8 @@ export default function AboutPage() {
               <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                <a href="mailto:hello@laotea.com" className="text-primary hover:text-secondary transition">
-                  hello@laotea.com
+                <a href="mailto:phousamtradingexportenterprise@gmail.com" className="text-primary hover:text-secondary transition">
+                  phousamtradingexportenterprise@gmail.com
                 </a>
               </div>
             </div>
@@ -84,7 +81,7 @@ export default function AboutPage() {
               <div>
                 <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                 <a href="tel:+85620123456" className="text-primary hover:text-secondary transition">
-                  +856 20 123 456
+                  +856 20 9227 979
                 </a>
               </div>
             </div>
@@ -93,7 +90,7 @@ export default function AboutPage() {
               <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-semibold text-foreground mb-1">Location</h4>
-                <p className="text-muted-foreground">Luang Prabang, Laos</p>
+                <p className="text-muted-foreground">Houaphanh, Laos</p>
               </div>
             </div>
           </div>
