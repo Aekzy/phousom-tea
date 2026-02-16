@@ -7,7 +7,7 @@ import Image from "next/image"
 import { products } from "@/data/products"
 
 // Add categories list (you can edit)
-const categories = ["All", "Green Tea", "Black Tea", "Oolong", "Herbal"]
+const categories = ["All", "Red Tea", "Black Tea", "Oolong", "Herbal"]
 
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
@@ -145,7 +145,7 @@ export default function ProductsPage() {
 
                       <div className="flex items-center justify-between pt-4">
                         <span className="text-2xl font-bold text-primary">
-                          ${product.price.toFixed(2)}
+                          {product.price.toFixed(2)}
                         </span>
                         <Link
                           href={`/products/${product.id}`}

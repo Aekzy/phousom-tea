@@ -9,10 +9,10 @@ export interface product {
 export const products: Product[] = [
     {
         id: 1,
-        name: "Phou Sam Tea Red",
+        name: "Classic Highland Red Tea",
         price: 150000,
         image: [
-            "products/images/product-2-1.png", 
+            "products/images/product-2-1.png",
             // "products/images/product-2-2.png",
             // "products/images/product-2-3.png"
         ],
@@ -21,7 +21,7 @@ export const products: Product[] = [
     },
     {
         id: 2,
-        name: "Phou Sam Tea Green",
+        name: "Signature Highland Green Tea",
         price: 125000,
         image: [
             "products/images/product-1-1.png",
